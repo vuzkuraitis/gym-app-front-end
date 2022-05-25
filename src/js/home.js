@@ -37,6 +37,7 @@ const getData = async (token) => {
     const play = document.createElement("div");
     play.classList.add("play");
     a.href = exc.video;
+    a.target = "_blank";
     a.appendChild(play);
     td4.append(a);
   });
