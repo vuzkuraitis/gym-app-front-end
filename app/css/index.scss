@@ -130,11 +130,13 @@ main {
 }
 .list > a:hover > i {
   color: #ffffff;
+  transform: translateY(-0.25rem) scale(1.25);
   transition: 0.3s ease-in-out;
 }
 .socialMedia {
   display: flex;
   align-items: center;
+  height: 2rem;
   justify-content: space-around;
   width: 50%;
 }
@@ -144,5 +146,6 @@ main {
 .socialMedia > i:hover {
   color: #ffffff;
   cursor: pointer;
+  transform: translateY(-0.25rem) scale(1.25);
   transition: 0.3s ease-in-out;
 }

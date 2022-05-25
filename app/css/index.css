@@ -226,6 +226,8 @@ main {
 
 .list > a:hover > i {
   color: #ffffff;
+  -webkit-transform: translateY(-0.25rem) scale(1.25);
+          transform: translateY(-0.25rem) scale(1.25);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
@@ -237,6 +239,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 2rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 50%;
@@ -249,6 +252,8 @@ main {
 .socialMedia > i:hover {
   color: #ffffff;
   cursor: pointer;
+  -webkit-transform: translateY(-0.25rem) scale(1.25);
+          transform: translateY(-0.25rem) scale(1.25);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
