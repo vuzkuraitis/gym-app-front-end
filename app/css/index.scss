@@ -128,24 +128,60 @@ main {
   flex-direction: column;
   justify-content: center;
 }
-.list > a:hover > i {
+.list > a > i {
+  overflow: hidden;
+}
+.list > a > i::after {
+  content: "";
+  background: #ec994b;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 3px;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+  overflow: visible;
+  margin-top: 0.25rem;
+}
+.list > a > i:hover {
   color: #ffffff;
-  transform: translateY(-0.25rem) scale(1.25);
+  cursor: pointer;
   transition: 0.3s ease-in-out;
+}
+.list > a > i:hover::after {
+  background-color: #ec994b;
+  transform: translateX(1%);
 }
 .socialMedia {
   display: flex;
   align-items: center;
-  height: 2rem;
+  height: 3rem;
   justify-content: space-around;
+  position: relative;
   width: 50%;
 }
 .socialMedia > i {
   font-size: 1rem;
+  overflow: hidden;
+}
+.socialMedia > i::after {
+  content: "";
+  background: #ec994b;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 2px;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+  overflow: visible;
+  margin-top: 0.25rem;
 }
 .socialMedia > i:hover {
   color: #ffffff;
   cursor: pointer;
-  transform: translateY(-0.25rem) scale(1.25);
   transition: 0.3s ease-in-out;
+}
+.socialMedia > i:hover::after {
+  background-color: #ec994b;
+  transform: translateX(1%);
 }
